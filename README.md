@@ -1,67 +1,69 @@
-# An_energy_efficient_wsn_with_EQDC_protocol_and_improved_node_partcipation
-Wireless Sensor Network with improved network efficiency and improved node participation
+# Wireless Sensor Network (WSN) Research and Development(An Energy Efficient WSN With EQDC Protocol And Improved Node Participation)
 
-A wireless sensor network (WSN) is a wireless network that contains distributed independent sensor devices that are meant to monitor physical or environmental conditions.
-A WSN consists of a set of connected tiny sensor nodes, which communicate with each other and exchange information and data. These nodes obtain information on the environment such as temperature, pressure, humidity or pollutant, and send this information
-to a base station.The latter sends the information to a wired network or activates an alarm or an action, depending on the type and magnitude of data monitored.
-Random distribution of nodes in Wireless Sensor Networks (WSNs) means that the sensor nodes are deployed randomly within the network area without following any specific pattern or placement strategy. In other words, the nodes are placed at random
-locations, and their positions are not predetermined, but here the network area for distribution is predefined.Random deployment can be used to scale the network to cover a
-larger area, as it does not require precise node placement or pre-existing infrastructure,
-can help reduce the cost and time of deploying the network, as it does not require extensive planning or surveying of the deployment area, also helps to make the network more
-robust and resilient to node failures, as the random distribution can help distribute the
-workload and ensure redundancy.On the otherhand, disadvantages includes not guarantee full coverage of the deployment area, and there may be regions that are underserved
-or overserved, may result in poor connectivity or gaps in the network, which can affect data collection and transmission, can result in inefficient energy consumption, as
-some nodes may be placed in locations with high traffic or low relevance, leading to
-unnecessary energy consumption.These can be solved by the proposed system of having
-coverage hole detection and rectifying issue by means on improved node participation of
-the movable nodes to the coverage hole area.Resulting of solving all the issues that arises due to random distribution of nodes,ie, guarantee the full coverage of the deployment,no connectivity gaps and lower energy consumption.
+Welcome to the repository for our Wireless Sensor Network (WSN) research and development project. In this project, we aim to address critical issues related to WSNs, including coverage hole detection, improved node participation, energy-efficient routing, and much more. Below, you'll find a comprehensive overview of our research, objectives, scope, and future directions.
 
+## Table of Contents
+- [Introduction](#introduction)
+- [What is a Wireless Sensor Network (WSN)?](#what-is-a-wireless-sensor-network-wsn)
+- [Random Node Distribution](#random-node-distribution)
+- [Delaunay Triangulation](#delaunay-triangulation)
+- [Clustering Protocols](#clustering-protocols)
+- [Proposed System](#proposed-system)
+- [Objectives](#objectives)
+- [Scope](#scope)
+- [Conclusion](#conclusion)
+- [Future Scope](#future-scope)
 
-Delaunay triangulation can be used to optimize the coverage of a WSN by creating a
-mesh of triangles that covers the deployment area. This ensures that every point in the
-network is covered by at least one sensor node, and helps minimize the number of nodes
-required for full coverage.Can be used to optimize the energy consumption of sensor
-nodes in WSNs. By ensuring that sensor nodes are not redundantly deployed, Delaunay
-triangulation can help reduce the number of active nodes and the amount of energy
-consumed by the network.To optimize the routing efficiency in WSNs by providing a
-natural framework for the design of routing protocols. The triangles in the mesh can be
-used to define communication paths between nodes, and can help reduce the distance
-and number of hops required for data transmission. Scale WSNs to cover larger areas,
-as it provides a framework for deploying a large number of nodes and optimizing their
-placement. This makes it possible to monitor larger areas with greater precision and
-accuracy.It can help improve the fault tolerance of WSNs by providing redundancy
-and alternate paths for data transmission. If a node fails or becomes unavailable, the
-mesh can be reconfigured to ensure that data can still be transmitted through alternate
-routes.Used to find the largest free space inside a network for next deployment target.
-And determine the optimal sensing coverage radius for each sensor,hence reducing the
-energy usage.
+## Introduction
 
+In Wireless Sensor Networks (WSNs), battery life is a critical concern. As sensor nodes deplete their batteries, communication holes emerge within the network. This project aims to detect these coverage holes, improve node participation, and develop energy-efficient routing protocols to enhance the overall efficiency and lifespan of WSNs.
 
-Clustering protocols are an important class of protocols used in Wireless Sensor Networks (WSNs) to organize sensor nodes into groups, or clusters, based on their spatial
-proximity, energy levels, or other relevant factors. The goal of clustering is to increase
-the energy efficiency of the network by reducing the number of nodes that need to transmit data to the base station, which in turn helps to prolong the lifetime of the network.In
-a clustering protocol, nodes are divided into groups, with each group being led by a designated cluster head (CH). The CH is responsible for aggregating data from the nodes
-in its group and transmitting it to the base station or to another CH in a higher-level
-cluster. This helps to reduce the number of nodes that need to transmit data directly
-to the base station, which in turn reduces the energy consumption of the network.Also
-by the LEACH protocol is designed to reduce energy consumption in WSNs by organizing the nodes into clusters and rotating the role of cluster head (CH) among the
-nodes to balance the energy consumption across the network.By organizing the nodes
-into clusters and rotating the CH role, the LEACH protocol helps to balance the energy
-consumption across the network, which in turn helps to prolong the lifetime of the network,used in large-scale networks, as it does not require a centralized infrastructure for cluster formation.It is adaptive to changes in the network topology, and can adjust the
-CH rotation rate based on the energy levels of the nodes.
+## What is a Wireless Sensor Network (WSN)?
 
+A WSN is a wireless network comprising distributed, independent sensor devices designed to monitor physical or environmental conditions. These tiny sensor nodes communicate with each other and exchange information, collecting data on various environmental parameters and forwarding it to a base station. WSNs find applications in diverse fields, including navigation systems, quality control, business, networking, and management.
 
-Also by the proposed system combination of improved node participation by placement of mobale nodes to the network area and energy efficient routing of clustering
-protocol of EQDC Protocol (Equi-Quadrant Division Clustering) and optimised Shortest Path Routing by means of minimum spanning tree.Able to obtain the shortest distance between nodes in network hence minimum path between a source and base station.Resulting to obtain increasing the network efficiency of the whole Wireless Sensor
-Network.On Random distribution of nodes into a predefined network area consisting
-of major issues like coverage hole, sensing range of each node etc. . . These are solved
-by improved node participation in the proposed system. Accordingly, the network area
-divided into equal four square quadrant of having a single cluster head in each quadrant. Also by optimized shortest path routing of minimum spanning tree for obtaining
-minimum path from each cluster head to base station. The purpose of improved node
-participation, EQDC and optimized shortest path routing is to increase data reliability, mitigate coverage hole issue, reduce energy consumption for wireless sensor network
-(WSN) and increase network efficiency. The experimental results of proposed methodology shows that EQDC protocol, enhanced node engagement and OSPR protocol shows
-the tackle coverage hole challenges, curtail power usage, high data reliability, optimized
-network productivity.
+## Random Node Distribution
 
+Randomly deploying sensor nodes within a predefined network area is a common practice. This approach offers scalability, reduced deployment costs, and increased network robustness. However, it also presents challenges such as incomplete coverage, connectivity issues, and inefficient energy consumption. To address these challenges, we propose a system that detects coverage holes and improves node participation to ensure complete coverage and reduced energy consumption.
 
+## Delaunay Triangulation
 
+Delaunay triangulation is a computational geometry technique that optimizes WSN coverage by creating a mesh of triangles covering the deployment area. This technique guarantees that every point in the network is covered by at least one sensor node, reducing the number of active nodes and overall energy consumption. Delaunay triangulation also enhances routing efficiency by defining communication paths between nodes and allows scaling of WSNs for larger coverage areas.
+
+## Clustering Protocols
+
+Clustering protocols are crucial for organizing sensor nodes into groups based on spatial proximity, energy levels, or other factors. These protocols reduce energy consumption by minimizing the number of nodes transmitting data directly to the base station. The LEACH protocol, for example, rotates the role of cluster head among nodes to balance energy consumption and adapt to changing network topologies.
+
+## Proposed System
+
+Our proposed system combines improved node participation by placing mobile nodes strategically within the network and an energy-efficient routing approach using the EQDC Protocol (Equi-Quadrant Division Clustering) and optimized Shortest Path Routing through minimum spanning trees. This combination minimizes distances between nodes, reducing energy consumption and enhancing network efficiency.
+
+## Objectives
+
+- Mitigate coverage hole issues in WSNs.
+- Increase node participation in the sensor network.
+- Develop an improved energy routing clustering protocol.
+- Optimize the LEACH protocol.
+- Combine improved energy routing with clustering to enhance network efficiency.
+- Find the shortest path from source nodes to the base station.
+- Improve energy efficiency within the wireless sensor network using our proposed system.
+
+## Scope
+
+WSNs have a wide range of applications, including:
+
+- **Navigation Systems:** Providing indoor positioning and navigation in GPS-challenged environments, among other uses.
+- **Quality Control Systems:** Monitoring product quality, real-time process control, and predictive maintenance in various industries.
+- **Business:** Supporting supply chain management, inventory control, and environmental monitoring.
+- **Networking:** Enabling data collection, processing, and communication, as well as network management.
+- **Management:** Assisting in asset management, facility management, supply chain management, and environmental management.
+
+## Conclusion
+
+Random node distribution in WSNs is essential in remote or challenging environments. We've explored various strategies and techniques to address the inherent challenges, including coverage holes, connectivity issues, and energy consumption. Our proposed system, which combines Delaunay triangulation, clustering protocols, and optimized routing, significantly improves network efficiency.
+
+## Future Scope
+
+Our project opens up several avenues for future research and development, including advanced deployment strategies, dynamic node mobility, energy harvesting and power management, fault tolerance, integration with emerging technologies, and security and privacy considerations. These areas present exciting opportunities to further enhance WSNs for various applications and environments.
+
+We invite you to explore our project and contribute to the exciting world of Wireless Sensor Networks!
